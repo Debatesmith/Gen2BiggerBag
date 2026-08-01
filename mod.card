@@ -1,0 +1,13 @@
+return {
+  summary = "Raises the bag limit from 20 to 255 distinct items.",
+  author = "EriLab",
+  tags = { "quality-of-life", "ui", "inventory" },
+  differences = {
+    changed = { "Bag capacity is 255 distinct items instead of 20." },
+    added = {},
+    known = {
+      "Original Game Boy save exports may retain the vanilla 20-slot limit."
+    },
+  },
+  compat = { engine = ">=0.1.50 <2.0.0", modApi = 2 },
+}
