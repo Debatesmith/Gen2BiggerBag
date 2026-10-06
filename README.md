@@ -1,45 +1,35 @@
-# EriLab Bottomless Bag
+# Gen 2 Bottomless Pack
 
-Expande a bag de Pokémon Red, Blue e Yellow de 20 para 255 tipos diferentes
-de item no Gen1Recomp.
+Expands the ordinary ITEM pocket in Pokemon Gold, Silver, and Crystal from 20 to 255 distinct item slots in Gen1Recomp.
 
-[Baixar a versão mais recente](https://github.com/erereck/gen1recomp-bottomless-bag/releases/latest)
+## What it changes
 
-## O que muda
+- Raises the ITEM pocket capacity from 20 to 255 distinct item types.
+- Keeps the normal limit of 99 copies per item.
+- Uses the Pack menu's existing scrolling behavior.
+- Does not add, remove, or rearrange items.
+- Uses only the public Mod API and requires no `engine_internals` permission.
 
-- Aumenta a capacidade de 20 para 255 tipos diferentes de item.
-- Mantém o limite normal de 99 unidades por item.
-- Usa a rolagem já existente no menu da bag.
-- Não entrega itens e não altera arquivos do jogo.
-- Usa apenas a API pública `constants.bagSize`; não requer
-  `engine_internals`.
+Gen 2's other pockets retain their native capacities: 12 Ball slots, 25 Key Item slots, and 57 TM/HM slots. Those pockets already have room for their complete native item sets.
 
-## Requisitos
+## Compatibility
 
-- Gen1Recomp **v0.1.50 ou mais recente**.
+- Pokemon Gold, Silver, and Crystal.
+- Gen1Recomp 0.2.27 or newer, below 1.0.0.
 - Mod API 2.
 
-A v0.1.50 inclui a correção que faz a bag respeitar `constants.bagSize`.
-Versões anteriores ignoram essa configuração.
+## Installation
 
-## Instalação
+Import `Gen2-Bottomless-Pack-v1.0.0.zip` from the Gen1Recomp Mods screen, enable it for Gold, Silver, or Crystal, and restart the game if prompted.
 
-Importe `erilab_bottomless_bag.zip` pelo menu de Mods do Gen1Recomp e
-ative-o antes de carregar o save.
+## Saves and cartridge export
 
-O mod pode ser usado junto com **EriLab Bag Wrap**.
+Gen1Recomp's native save preserves the complete inventory. If the mod is disabled, existing items remain in the save, but the game will reject new ITEM-pocket item types while the pocket is above its active capacity.
 
-## Saves
+An original Game Boy cartridge save has room for only 20 ITEM-pocket slots. Gen1Recomp will refuse cartridge `.sav` export while the ITEM pocket exceeds that native limit. Deposit or remove items until no more than 20 distinct ITEM-pocket types remain before exporting.
 
-O formato nativo `save.lua` preserva todos os itens mesmo se o mod for
-desativado. Nesse caso, novos tipos de item ficam bloqueados até a bag voltar
-ao limite ativo, mas nenhum item existente é apagado.
+Back up important saves before changing mods or exporting to cartridge format.
 
-Exportações para o formato de cartucho `.sav` continuam limitadas aos
-primeiros 20 slots pela estrutura original do Game Boy. Faça um backup antes
-de exportar um save com mais de 20 tipos de item.
+## Credits
 
-## Comunidade
-
-O projeto indica o [Discord oficial](https://bois.icu) para suporte,
-anúncios e mods.
+Gen 2 port by Debatesmith. Inspired by EriLab Bottomless Bag for Gen 1 by erereck.
