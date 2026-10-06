@@ -1,17 +1,18 @@
 {
-  "id": "erilab_bottomless_bag",
-  "name": "EriLab Bottomless Bag",
-  "version": "1.1.0",
+  "id": "gen2_bottomless_pack",
+  "name": "Gen 2 Bottomless Pack",
+  "version": "1.0.0",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
-  "category": "UI",
-  "game_version": ">=0.1.50 <2.0.0",
-  "github": "erereck/gen1recomp-bottomless-bag",
+  "category": "GAMEPLAY",
+  "games": ["gen2"],
+  "game_version": ">=0.2.27 <1.0.0",
   "priority": 100,
   "permissions": [],
   "dependencies": [],
   "optional_dependencies": [],
   "conflicts": [],
-  "description": "Expands the Gen 1 bag from 20 to 255 distinct item slots."
+  "affects_link": false,
+  "description": "Expands the ordinary ITEM pocket in Pokemon Gold, Silver, and Crystal from 20 to 255 distinct item slots."
 }
